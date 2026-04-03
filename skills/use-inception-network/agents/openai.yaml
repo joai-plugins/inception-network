@@ -1,0 +1,18 @@
+interface:
+  display_name: "Inception Network"
+  short_description: "Connect Inception Network to Claude, Codex, and ChatGPT through JoAi's hosted MCP app server."
+  icon_small: "https://raw.githubusercontent.com/JoAiHQ/assets/refs/heads/main/apps/logos/inception-white.svg"
+  icon_large: "https://raw.githubusercontent.com/JoAiHQ/assets/refs/heads/main/apps/logos/inception-white.svg"
+  brand_color: "#ffffff"
+  default_prompt: "List the Inception Network tools available in this app."
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "joai-inception-network"
+      description: "Inception Network MCP server by JoAi"
+      transport: "streamable_http"
+      url: "https://cortex.joai.ai/mcp/apps/inception-network"
